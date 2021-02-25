@@ -1,7 +1,7 @@
 app:
   name: AppZ IDE
   code: APPZIDE
-  notify: appzdev@cloudbourne.co
+  notify: bkoshy@ecloudcontrol.com
 
 build:
   version: 0.2
@@ -12,7 +12,7 @@ build:
 
 deploy:
   type: statefulset
-  context: alpha/DEV
+  context: bibin-ecloudcontrol/DEV
   replicas: 1
   port:
   - 80
@@ -25,5 +25,5 @@ volumes:
   size: 5Gi 
 
 properties:
-  IDE_PASSWORD_HASH: "appz:$2y$10$UlYiRlcQw4Doscdodv3vruSeGc/YfKH/tc1F1/HOgPeTMUMsg84Bm"
+  IDE_PASSWORD_HASH: "bibin:$2y$10$x9uKcSn.7fW6wlHNq/7S7ul1nr6Hqx6PEgx7cO.GX/vqtNe5/9sJW"
   revision : 15
